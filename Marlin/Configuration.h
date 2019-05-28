@@ -865,9 +865,9 @@
 // @section machine
 
 // Invert the stepper direction. Change (or reverse the motor connector) if an axis goes the wrong way.
-#define INVERT_X_DIR false // set to true for stock drivers or TMC2208 with reversed connectors
-#define INVERT_Y_DIR true // set to false for stock drivers or TMC2208 with reversed connectors
-#define INVERT_Z_DIR true // set to false for stock drivers or TMC2208 with reversed connectors
+#define INVERT_X_DIR false
+#define INVERT_Y_DIR true
+#define INVERT_Z_DIR true
 
 // @section extruder
 
@@ -1530,19 +1530,19 @@
 #define SPEAKER
 
 //
-// STARTUP CHIME
+// STARTUPSTARTUP CHIME
 //
 // Play a (non-earpiercing) startup chime on startup/serial connection
 // of the Trigorilla board
 //
-//#define STARTUP_CHIME
+#define STARTUP_CHIME
 
 //
 // ENDSTOP BEEP
 //
 // Short 2KHz beep when endstops are hit
 //
-//#define ENDSTOP_BEEP
+#define ENDSTOP_BEEP
 
 //
 // The duration and frequency for the UI feedback sound.

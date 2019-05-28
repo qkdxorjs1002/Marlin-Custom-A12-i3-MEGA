@@ -113,6 +113,7 @@ private:
   void FilamentChangeResume();
   void ReheatNozzle();
   void ParkAfterStop();
+  void SuperMario();
 
   char     SelectedDirectory[30];
   uint8_t  SpecialMenu=false;
