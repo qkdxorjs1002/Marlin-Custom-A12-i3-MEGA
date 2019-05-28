@@ -1514,7 +1514,7 @@ void AnycubicTFTClass::SuperMario()
     buzzer.tone(200, 0);
     buzzer.tone(200, 0);
     buzzer.tone(200, 0);
-    buzzer.tone(200, NOTE_G5);
+    buzzer.tone(100, NOTE_G7);
 }
 
 AnycubicTFTClass AnycubicTFT;
