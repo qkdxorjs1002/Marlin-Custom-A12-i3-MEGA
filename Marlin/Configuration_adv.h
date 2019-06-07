@@ -200,7 +200,7 @@
 #if ENABLED(USE_CONTROLLER_FAN)
   //#define CONTROLLER_FAN_PIN -1        // Set a custom pin for the controller fan
   #define CONTROLLERFAN_SECS 60          // Duration in seconds for the fan to run after all motors are disabled
-  #define CONTROLLERFAN_SPEED 200        // 255 == full speed
+  #define CONTROLLERFAN_SPEED 255       // 255 == full speed
 #endif
 
 // When first starting the main fan, run it at full speed for the
@@ -243,8 +243,8 @@
 #define E3_AUTO_FAN_PIN -1
 #define E4_AUTO_FAN_PIN -1
 #define CHAMBER_AUTO_FAN_PIN -1
-#define EXTRUDER_AUTO_FAN_TEMPERATURE 60
-#define EXTRUDER_AUTO_FAN_SPEED   200  // == full speed
+#define EXTRUDER_AUTO_FAN_TEMPERATURE 70
+#define EXTRUDER_AUTO_FAN_SPEED   200
 
 /**
  * Part-Cooling Fan Multiplexer
