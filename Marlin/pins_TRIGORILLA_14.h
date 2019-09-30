@@ -68,6 +68,28 @@
 #define E0_DIR_PIN         28
 #define E0_ENABLE_PIN      24
 
+#if HAS_DRIVER(TMC2208)
+  /**
+   * TMC2208 stepper drivers
+   *
+   * Hardware serial communication ports.
+   * If undefined software serial is used according to the pins below
+   */
+	#define X_SERIAL_TX_PIN    11
+	#define X_SERIAL_RX_PIN    -1
+
+	#define Y_SERIAL_TX_PIN    12
+	#define Y_SERIAL_RX_PIN    -1
+
+	#define Z_SERIAL_TX_PIN    21
+	#define Z_SERIAL_RX_PIN    -1
+	#define Z2_SERIAL_TX_PIN   20
+	#define Z2_SERIAL_RX_PIN   -1
+
+	#define E0_SERIAL_TX_PIN   4
+	#define E0_SERIAL_RX_PIN   -1
+#endif
+
 // EndStops
 #define X_MIN_PIN           3
 #define Y_MIN_PIN          42
@@ -90,8 +112,8 @@
 
 // Temperatursensoren
 #define TEMP_0_PIN         13
-#define TEMP_1_PIN         15
-#define TEMP_2_PIN         12
+#define TEMP_1_PIN         -1 //15
+#define TEMP_2_PIN         -1 //12
 #define TEMP_BED_PIN       14
 
 // Servos
